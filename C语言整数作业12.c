@@ -15,8 +15,16 @@ int main()
   for (ii=0;ii<52;ii++)
   {
       int itmp=rand()%52+1;
-      printf("%d ",itmp)      
+      printf("%d ",itmp)  
+      result[ii]=itmp;
   }
 
+    printf("\n");
+  
+    for (ii=0;ii<52;ii++)
+  {
+      printf("%d ",result[ii])  
+  }
+  
   printf("\n");
 }
