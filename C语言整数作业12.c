@@ -21,9 +21,9 @@ int main()
       // 除去重复数字
       for (jj=0;jj<pos;jj++)
       {
-      }
         if (jj<pos) continue; //如果jj<pos,表示上面的循环是跳出的。没有执行完 (改成<pos，就少跑循环
-
+      }
+    
       // 以下代码表示的是新的不重复的数
       printf ("%d ",itmp);
       result[pos]=itmp;  // 不同的数就存到result[pos]里
