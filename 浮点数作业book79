@@ -5,13 +5,16 @@ double CEIL(const double x)         // double向上取整数
   long II=x;
 
   // 判断是否为整数
-  if (x==II)
+  if (x==II) return x;
+
+  if (x>0)
   {
-    return x;
+    II=x+1;
+    return II;
   }
   else
   {
-    II=x+1;
+    II=x;
     return II;
   }
 }
