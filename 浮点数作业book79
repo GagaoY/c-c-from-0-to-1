@@ -1,0 +1,17 @@
+double CEIL(const double x);          // double向上取整数
+
+double CEIL(const double x)         // double向上取整数
+{
+  long II=x;
+
+  // 判断是否为整数
+  if (x==II)
+  {
+    return x;
+  }
+  else
+  {
+    II=x+1;
+    return II;
+  }
+}
