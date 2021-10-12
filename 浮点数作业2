@@ -1,0 +1,15 @@
+// 把双精度val分解成整数部分和小数部分，整数部分存放在ip所指的变量中，返回小数部分。
+double MODF(double val,double *ip)
+{
+  long ll=val; //浮点数取整，得整数
+
+  (*ip)=ll; //整数存放在“zs”的地址
+
+  return val-ll;//浮点数-zs=ws
+}
+
+  double zs,ws; //定义一个整数，一个尾数
+  
+  ws=MODF(-16,&zs); // 函数定义，前面是所求数，后面是指针，指向内存地址，MODF（）返回的是尾数
+  
+  printf("zs=%lf,ws=%lf\n",zs,ws); // 
